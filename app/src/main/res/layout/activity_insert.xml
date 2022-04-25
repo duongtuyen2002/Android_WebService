@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Insert">
+
+    <TextView
+        android:id="@+id/textMa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="13dp"
+        android:text="Mã Nhân Viên"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtMa"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/textMa"
+        android:ems="10"
+        android:hint="Mã Nhân Viên"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="90dp"
+        android:text="Tên Nhân Viên"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/txtTen"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtMa"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/textTen"
+        android:ems="10"
+        android:hint="Tên Nhân Viên"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textSDT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTen"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="56dp"
+        android:text="Số điện thoại"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/txtSDT"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtTen"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/textTen"
+        android:ems="10"
+        android:hint="Số điện thoại"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textSDT"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="68dp"
+        android:text="Thêm"></Button>
+
+    <Button
+        android:id="@+id/btnOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textSDT"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="69dp"
+        android:text="Thoát"></Button>
+</RelativeLayout>

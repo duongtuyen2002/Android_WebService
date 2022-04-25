@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFEB3B"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateNV">
+
+    <TextView
+        android:id="@+id/tv_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="98dp"
+        android:text="CẬP NHẬT THÔNG TIN NHÂN VIÊN"
+        android:textColor="#A33737"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_updateTen"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_updateMa"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="70dp"
+        android:text="Tên nhân viên"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_updateSDT"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_updateTen"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="70dp"
+        android:text="Số điện thoại"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edt_Ma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_update"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="55dp"
+        android:layout_toEndOf="@+id/tv_updateMa"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edt_Ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_Ma"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="55dp"
+        android:layout_toEndOf="@+id/tv_updateTen"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edt_SDT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_Ten"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="55dp"
+        android:layout_toEndOf="@+id/tv_updateSDT"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tv_updateMa"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_update"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="70dp"
+        android:text="Mã nhân viên"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_updateSDT"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="71dp"
+        android:backgroundTint="#5E2E2E"
+        android:text="Xác nhận" />
+
+    <Button
+        android:id="@+id/btnOutUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_SDT"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="67dp"
+        android:layout_toEndOf="@+id/btnUpdate"
+        android:backgroundTint="#5E2E2E"
+        android:text="Hủy" />
+
+
+</RelativeLayout>
